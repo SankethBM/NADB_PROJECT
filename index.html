@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 
     <title>NADB</title>
 </head>
@@ -22,7 +24,7 @@
 <body class="" style="font-family: Arvo, serif;font-weight: 500; font-style: normal;">
     
 <section class="header">
-  <nav style="background-color: #FF4242;" class="sticky fixed-top d-flex top-0 z-50 p-5 shadow md:flex md:items-center md:justify-between">
+  <nav style="background-color: #146C94;" class="sticky fixed-top d-flex top-0 z-50 p-5 shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center">
       <span class="text-2xl cursor-pointer text-white mx-4">
         <img src="./images/nadb_logo.png" alt="" class="h-12 inline">
@@ -34,12 +36,12 @@
       </span>
     </div>
 
-    <ul class="md:flex items-center z-[-1] md:z-auto md:static absolute bg-[#FF4242] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+    <ul class="md:flex items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-[#146C94]">
       <li class="mx-4 my-6 md:my-0">
         <a href="#" class="text-xl text-white hover:text-black duration-500">HOME</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl text-white hover:text-black duration-500">ABOUT</a>
+        <a href="./sub_pages/about.html" class="text-xl text-white hover:text-black duration-500">ABOUT</a>
       </li>
       <li class="mx-4 my-6 md:my-0">
         <a href="#" class="text-xl text-white hover:text-black duration-500">SERVICES</a>
@@ -52,42 +54,45 @@
 </section>
 
 <section class="hero-section">
-  <div class="h-full grid items justify-items-center mt-28 mb-16">
+  <div class="h-full grid items justify-items-center mb-16">
 
-    <!-- <div class="relative top-0 h-screen bg-cover bg-center grid items-center justify-items-center h-[200px] w-[600px] sm:h-[] sm:w-[] md:h-[] md:w-[] lg:h-[] lg:w-[]" style="background-image: url('./images/shield-halved-solid 1.svg'); align-items: center; justify-content: center;"></div>   -->
+    <div class="bg-img relative top-32 h-screen bg-cover bg-center grid items-center justify-items-center h-full w-full sm:h-[150px] sm:w-[150px] md:h-[700px] md:w-[700px] lg:h-[] lg:w-[] opacity-50" style="background-image: url('./images/ip-img.png'); align-items: center; justify-content: center;"></div>  
 
-    <div class="wrapper  w-auto grid grid-row-2 md:grid-row-1 lg:grid-row-1 " style="font-family: Arvo, serif;font-weight: 700; font-style: normal;">
-      <div class="static-txt w-auto text-center ">Be The One Who</div>
+    <div class="wrapper absolute w-auto grid grid-row-2 md:grid-row-1 lg:grid-row-1 mt-24" style="font-family: Arvo, serif;font-weight: 700; font-style: normal;">
       <div>
+        <div class="static-txt w-auto text-center ">Be The One Who</div>
 
-        <ul class="dynamic-txt text-center ">
-          <li><span>Create</span></li>
-          <li><span>Build</span></li>
-          <li><span>Own</span></li>
-          <li><span>Protect</span></li>
-        </ul>
+        <div>
+          <ul class="dynamic-txt text-center bg-white ">
+            <li><span>Create</span></li>
+            <li><span>Build</span></li>
+            <li><span>Own</span></li>
+            <li><span>Protect</span></li>
+          </ul>
+        </div>
+
       </div>
-    </div>
-    <div class="grid font-black text-2xl items-center justify-items-center w-auto">
-      <h1 class=" text-center mt-12">"Protecting Innovation, Empowering Creation."</h1>
-    </div>
-    <div class="grid mt-12 text-sm items-center justify-items-center w-auto ">
-      <p class=" text-center max-w-4xl mx-12 xs:text-xs sm:text-sm md:text-lg lg:text-xl ">At <span style="color: #FF4242; font-weight: 800;">NADB</span>, we are committed to empowering innovation by protecting what matters most—your intellectual property. As a trusted partner for creators, businesses, and innovators, our mission is to ensure that your ideas, inventions, and creative works are shielded from infringement, misuse, and unauthorized access.</p>
+      <div class="grid font-black text-3xl items-center justify-items-center w-auto">
+        <h1 class=" text-center mt-12">"Protecting Innovation, Empowering Creation."</h1>
+      </div>
+      <div class="grid mt-12 text-xl items-center justify-items-center w-auto ">
+        <p class=" text-center max-w-4xl mx-12 xs:text-xs sm:text-sm md:text-lg lg:text-xl ">At <span style="color: #146C94; font-weight: 800;">NADB</span>, we are committed to empowering innovation by protecting what matters most—your intellectual property. As a trusted partner for creators, businesses, and innovators, our mission is to ensure that your ideas, inventions, and creative works are shielded from infringement, misuse, and unauthorized access.</p>
+      </div>
+      <div class="items-center justify-items-center text-center mb-16 mt-12 text-white">
+        <button class="btn btn-primary bg-[#19A7CE] text-center h-[60px] w-48 rounded-2xl hover:bg-red font-extrabold">CONTACT NOW !</button>
+      </div>
     </div>
   </div>
 </section>
 
-<div class="items-center justify-items-center text-center mb-16 text-white">
-  <button class="btn btn-primary bg-[#FF4242] text-center h-[60px] w-48 rounded-2xl hover:bg-red font-extrabold" style="border: #FF4242;">CONTACT NOW !</button>
-</div>
 
-<div style="background: linear-gradient(to right, rgba(255, 39, 39, 17%), rgba(251, 135, 135, 6%)); padding-top: 10px;">
+<div style=" padding-top: 10px;">
 
 <section>
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center justify-items-center mb-16 text-center mx-9 mt-24">
 
     <div data-aos="fade-up-right" data-aos-duration="1000">
-      <a href="#" class="block max-w-sm p-6 bg-[#FB8787] bg-opacity-70 rounded-2xl items-center justify-items-center">
+      <a href="#" class="block max-w-sm p-6 bg-[#E9DFC3] bg-opacity-70 rounded-2xl items-center justify-items-center">
         <img src="./images/about-svgrepo-com.svg" class="h-8 w-8 " alt="">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">WHAT IS NADB</h5>
         <p class="font-normal text-black text-justify">Your Trusted Guardians of Authenticity. NADB is dedicated to eradicating product duplication and counterfeiting, preserving the integrity of markets, and empowering local and indigenous businesses and creativity</p>
@@ -95,7 +100,7 @@
     </div>
   
     <div data-aos="fade-up-right" data-aos-duration="1000">
-      <a href="#" class="block max-w-sm p-6 bg-[#FB8787] bg-opacity-70 rounded-2xl items-center justify-items-center">
+      <a href="#" class="block max-w-sm p-6 bg-[#E9DFC3] bg-opacity-70 rounded-2xl items-center justify-items-center">
         <img src="./images/crosshair-svgrepo-com (2).svg" class="h-8 w-8 " alt="">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">AIM</h5>
         <p class="font-normal text-black text-justify">Protecting your intellectual property is crucial for maintaining exclusivity and reaping the benefits of your ideas and creations. And our aim is to make sure that no others can misuse your Intellectual Property and to take down if any</p>
@@ -103,7 +108,7 @@
     </div>
 
     <div data-aos="fade-up-left" data-aos-duration="1000">
-      <a href="#" class="block max-w-sm p-6 bg-[#FB8787] bg-opacity-70 rounded-2xl items-center justify-items-center">
+      <a href="#" class="block max-w-sm p-6 bg-[#E9DFC3] bg-opacity-70 rounded-2xl items-center justify-items-center">
         <img src="./images/SVGRepo_iconCarrier.svg" class="h-8 w-8 " alt="">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">VISION</h5>
         <p class="font-normal text-black text-justify">Companies and Organizations often develop a vision or strategy for managing their intellectual property. This could include goals related to innovation, patenting, trademark protection, and overall IP management.</p>
@@ -111,7 +116,7 @@
     </div>
 
     <div data-aos="fade-up-left" data-aos-duration="1000">
-      <a href="#" class="block max-w-sm p-6 bg-[#FB8787] bg-opacity-70 rounded-2xl items-center justify-items-center">
+      <a href="#" class="block max-w-sm p-6 bg-[#E9DFC3] bg-opacity-70 rounded-2xl items-center justify-items-center">
         <img src="./images/dart-mission-goal-success-svgrepo-com.svg" class="h-8 w-8 " alt="">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-black">MISSION</h5>
         <p class="font-normal text-black text-justify">Organizations often integrate IP considerations into their overall mission.This involve commitment to innovation, protecting proprietary technologies,fostering a culture of creativity.</p>
@@ -125,7 +130,7 @@
 
 <section class="video-section" data-aos="zoom-in-up" data-aos-duration="1000">
   <div class="mx-auto max-w-lg overflow-hidden rounded-2xl md:max-w-6xl md:max-h-full mb-16 mx-4">
-    <div class="md:flex mx-9 bg-[#FB8787] bg-opacity-70 rounded-2xl">
+    <div class="md:flex mx-9 bg-[#19A7CE] bg-opacity-70 rounded-2xl">
 
       <div class="md:shrink-0 p-6 rounded-lg items-center justify-items-center" >
        <img src="./images/nadb_logo.png" class="w-80 h-70" alt="">
@@ -151,18 +156,48 @@
   </div>
 </section>
 
+<section class="numbers-section items-center justify-items-center mb-12">
+  <div class="grid grid-cols-1 gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-items-center border bg-[#E9DFC3] h-auto w-full p-12 ">
 
+    <div class="items-center justify-items-center">
+      <div class="h-16 w-16"><img src="./images/business-man-pointing-to-his-left-svgrepo-com.png" class="" alt=""></div>
+      <div><h1 class="num text-6xl" data-val="5000">0000+</h1></div>
+      <div><h1 class="text-2xl">Clients</h1></div>
+    </div>
+
+    <div class="items-center justify-items-center">
+      <div class="h-16 w-16"><img src="./images/tasks-app-svgrepo-com (1).png" alt=""></div>
+      <div><h1 class="num text-6xl" data-val="4300">0000+</h1></div>
+      <div><h1 class="text-2xl">Projects</h1></div>
+    </div>
+
+    <div class="items-center justify-items-center">
+      <div class="h-16 w-16"><img src="./images/support-svgrepo-com.png" alt=""></div>
+      <div><h1 class="text-6xl">24/7</h1></div>
+      <div><h1 class="text-2xl">Support</h1></div>
+    </div>
+
+    <div class="items-center justify-items-center">
+      <div class="h-16 w-16"><img src="./images/office-worker-svgrepo-com.png" alt=""></div>
+      <div><h1 class="num text-6xl" data-val="1650">0000</h1></div>
+      <div><h1 class="text-2xl">Professionals</h1></div>
+    </div>
+
+  </div>
+</section>
 
 <section class="what-are-we-section mb-16 items-center justify-items-center " >
   <div>
-    <h1 class="text-center font-bold text-3xl">WHAT ARE WE !</h1>
+    <h1 class="text-center font-bold text-4xl" style="background: linear-gradient(90deg, #19A7CE, #AFD3E2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">WHAT ARE WE !</h1>
   </div>
 
   <div class="bg-transparent m-12" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
     <div class="gap-8 items-center py-8 px-4 max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img class="w-full hidden dark:block" src="./images/undraw_security-on_btwg_2-removebg-preview.png" alt="dashboard image">
+        <img class="w-full hidden dark:block" src="./images/wrw-img1.png" alt="dashboard image">
         <div class="mt-4 md:mt-0">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Intellectual Property Protection.</h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black" style="background: linear-gradient(90deg, #19A7CE, #AFD3E2);
+            -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;">Intellectual Property Protection.</h2>
             <p class="mb-6 font-light text-black text-justify md:text-lg ">NADB can assist businesses in registering and protecting their intellectual property rights, such as patents, trademarks, and copyrights. This service ensures that their innovations are safeguarded from duplication and counterfeiting.</p>
         </div>
     </div>
@@ -172,19 +207,23 @@
   <div class="bg-transparent mb-12 mx-12" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
     <div class="gap-8 items-center py-8 px-4 max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
       <div class="mt-4 md:mt-0">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Counterfeit Detection &Investigation</h2>
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black" style="background: linear-gradient(90deg, #19A7CE, #AFD3E2);
+        -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;">Counterfeit Detection &Investigation</h2>
         <p class="mb-6 font-light text-black text-justify md:text-lg ">NADB can conduct investigations to identify counterfeit products in the market. This service helps businesses take legal action against those responsible for product duplication and counterfeiting.</p>
       </div>
-      <img class="w-full hidden dark:block" src="./images/undraw_security_0ubl_2-removebg-preview.png" alt="dashboard image">
+      <img class="w-full hidden dark:block" src="./images/wrw-img2.png" alt="dashboard image">
     </div>
   </div>
 
 
   <div class="bg-transparent mx-12 mb-12" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
     <div class="gap-8 items-center py-8 px-4 max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img class="w-full hidden dark:block" src="./images/undraw_mobile-encryption_flk2_2-removebg-preview.png" alt="dashboard image">
+        <img class="w-full hidden dark:block" src="./images/wrw-img3.png" alt="dashboard image">
         <div class="mt-4 md:mt-0">
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black">Marketplace Integrity Advocacy</h2>
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black" style="background: linear-gradient(90deg, #19A7CE, #AFD3E2);
+            -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;">Marketplace Integrity Advocacy</h2>
             <p class="mb-6 font-light text-black text-justify md:text-lg ">NADB can advocate for stronger laws and regulations aimed at deterring product duplication and counterfeiting. This service involves working with policymakers to create a more robust legal framework for intellectual property protection.</p>
         </div>
     </div>
@@ -195,7 +234,7 @@
 
 
 <section class="footer text-white">
-  <div class="bg-[#FF4242] w-full p-6 items-center justify-items-center">
+  <div class="bg-[#146C94] w-full p-6 items-center justify-items-center">
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 items-center justify-items-center text-center mt-12">
 
       <div class="items-center justify-items-center text-center">
@@ -203,7 +242,7 @@
       </div>
 
       <div>
-        <ul class="items-center z-[-1] md:z-auto md:static absolute bg-[#FF4242] w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
+        <ul class="items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
           <li class="mx-4 my-6 md:my-3">
             <a href="#" class="text-md text-white hover:text-black duration-100">HOME</a>
           </li>
@@ -225,7 +264,7 @@
       <div class="col-span-2">
         <h1 class="text-xl m-4">SOCIAL MEDIA</h1>
 
-        <ul class="flex items-center z-[-1] md:z-auto md:static absolute bg-[#FF4242] w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
+        <ul class="flex items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
           <li class="mx-4 my-6 md:my-3">
             <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./images/twitter-svgrepo-com 1.png" alt=""></a>
           </li>
@@ -240,16 +279,12 @@
           </li>
         </ul>
 
-        <div>
-          
-        </div>
-
-
       </div>
     </div>
     <p class="mt-8">&copy; Copyright NADB. All Rights Reserved</p>
   </div>
 </section>
+
 </div>
 
 
@@ -257,17 +292,32 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 
 <script>
+  AOS.init();
   function Menu(e){
     let list = document.querySelector('ul');
 
     e.name === 'menu-outline' ? (e.name = "close-outline", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
   }
+
+
+  let valueDisplays = document.querySelectorAll(".num");
+  let interval = 5000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval/endValue);
+    let counter = setInterval(function(){
+      startValue += 1;
+      valueDisplay .textContent = startValue;
+      if(startValue == endValue){
+        clearInterval(counter);
+      }
+    }, duration) 
+  });
+
 </script>
   
 </body> 

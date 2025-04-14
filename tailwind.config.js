@@ -6,6 +6,10 @@ module.exports = {
         'primary': '#FF4242', // Reddish-orange
         'secondary': '#2196F3', // Blue
         'accent': '#E91E63', // Pink
+      },
+
+      animation:{
+        'bounce-slow': 'bounce 5s infinite',
       }
     }
   }

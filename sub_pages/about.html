@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <title>NADB</title>
+
+
+    <style>
+      @keyframes animate {
+        100%{
+          stroke-dashoffset: 65;
+        }
+      }
+    </style>
+    
+</head>
+<body style="font-family: Arvo, serif;font-weight: 500; font-style: normal;" class="">
+
+    <section class="header">
+        <nav style="background-color: #146C94;" class="sticky fixed-top d-flex top-0 z-50 p-5 shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl cursor-pointer text-white mx-4">
+                    <img src="./../images/nadb_logo.png" alt="" class="h-12 inline">
+                    NADB
+                </span>
+            
+                <span class="text-3xl cursor-pointer text-white md:hidden block mx-2"> 
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+      
+            <ul class="md:flex items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-[#146C94]">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="./../index.html" class="text-xl text-white hover:text-black duration-500">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="about.html" class="text-xl text-white hover:text-black duration-500">ABOUT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl text-white hover:text-black duration-500">SERVICES</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl text-white hover:text-black duration-500">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+
+    <section class="main-content">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center bg-[#E9DFC3] mb-12" >
+
+            <div class="items-center justify-items-center">
+                <img src="./../images/nadb_logo.png" class="h-96 w-96" alt="">
+            </div>
+
+            <div class="text-center ">
+                <h1 class="text-4xl font-extrabold m-8">NATIONAL ANTI - DUPLICATION BUREAU</h1>
+                <p class="text-2xl p-4">NADB, helps to prevent plagiarism, that affects Academia, Business and the Professional world.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="types-content items-center justify-items-center" >
+        <div class="grid gap-4 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-items-center p-12 cursor-pointer">
+            
+            <div class="bg-[#AFD3E2] rounded-2xl items-center justify-items-center text-center transition-transform duration-300 ease-in-out hover:scale-105 aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" >
+                <img src="./../images/type-1.jpg" class="h-16 w-16 rounded-2xl m-8" alt="">
+                <h1 class="font-extrabold text-2xl">Verbatim Plagiarism</h1>
+                <p class="p-12">Verbatim Plagiarism is Copying text without proper attribution. Verbatim plagiarism, also known as direct plagiarism, occurs when someone copies text, phrases, or sentences from a source without using quotation marks and without providing proper attribution to the original author. This type of plagiarism involves using another person's words word-for-word as if they were one's own.</p>
+            </div>
+
+            <div class="bg-[#AFD3E2] rounded-2xl items-center justify-items-center text-center transition-transform duration-300 ease-in-out hover:scale-105 aos-init aos-animate"  data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                <img src="./../images/type2.jpg" class="h-16 w-16 rounded-2xl m-8" alt="">
+                <h1 class="font-extrabold text-2xl">Paraphrasing Plagiarism</h1>
+                <p class="p-12">Rewriting someone else's work without giving credit. Paraphrasing plagiarism takes place when an individual rewrites someone else's work in their own words without giving credit to the original source. In this form of plagiarism, although the words are not identical, the essential ideas and structure of the source material are retained without proper acknowledgment.</p>
+            </div>
+
+            <div class="bg-[#AFD3E2] rounded-2xl items-center justify-items-center text-center transition-transform duration-300 ease-in-out hover:scale-105 aos-init aos-animate"  data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                <img src="./../images/type3.png" class="h-16 w-16 rounded-2xl m-8" alt="">
+                <h1 class="font-extrabold text-2xl">Mosaic Plagiarism</h1>
+                <p class="p-12">This type of Plagiarism Combining phrases from multiple sources without attribution. Mosaic plagiarism, often referred to as patchwork plagiarism, involves combining phrases and sentences from multiple sources to create a new work without providing proper attribution to the original authors. It can give the appearance of originality but is, in fact, a mishmash of others' work.</p>
+            </div>
+
+            <div class="bg-[#AFD3E2] rounded-2xl items-center justify-items-center text-center transition-transform duration-300 ease-in-out hover:scale-105 aos-init aos-animate"  data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                <img src="./../images/type4.jpg" class="h-16 w-16 rounded-2xl m-8" alt="">
+                <h1 class="font-extrabold text-2xl">Self-Plagiarism</h1>
+                <p class="p-12">In this type one will Reusing your own work without disclosure. Self-plagiarism, also known as auto plagiarism or duplicate publication, occurs when an individual reuses their own previously published work without disclosing this fact. While the work may belong to the same author, it still requires proper citation and disclosure to maintain academic and professional integrity.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="skills-section">
+
+        <div class="items-center justify-items-center mb-12">
+          <h1 class="text-4xl font-extrabold mb-12 aos-init aos-animate" style="background: linear-gradient(90deg, #19A7CE, #AFD3E2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">OUR SKILLS
+          </h1>
+        </div>
+
+        <div class="container1 grid items-center justify-items-center" style=" padding: 75px 90px;">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 radial-bars items-center justify-items-center" style="width: 100%; flex-wrap: wrap; justify-content: space-evenly; align-items: flex-start;">
+
+          <div class="radial-bar aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <svg x="0px" y="0px" viewBox="0 0 200 200" >
+              <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80" ></circle>
+            </svg>
+            <div class="percentage text-center text-xl font-extrabold">100% <br> Protection</div>
+          </div>
+
+          <div class="radial-bar aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <svg x="0px" y="0px" viewBox="0 0 200 200" >
+              <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80" ></circle>
+            </svg>
+            <div class="percentage text-center text-xl font-extrabold">99% <br>Threat Detection</div>
+          </div>
+
+          <div class="radial-bar aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <svg x="0px" y="0px" viewBox="0 0 200 200" >
+              <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+              <circle class="path path-3" cx="100" cy="100" r="80" ></circle>
+            </svg>
+            <div class="percentage text-center text-xl font-extrabold">98% <br>Duplicacy Prevention</div>
+          </div>
+
+          <div class="radial-bar aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <svg x="0px" y="0px" viewBox="0 0 200 200" >
+              <circle class="progress-bar" cx="100" cy="100" r="80" ></circle>
+              <circle class="path path-4" cx="100" cy="100" r="80" ></circle>
+            </svg>
+            <div class="percentage text-center text-xl font-extrabold">100% <br>Market Integrity  Advocacy</div>
+          </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="image-slider">
+      <h1 class="text-4xl font-extrabold text-center mb-12" style="background: linear-gradient(90deg, #19A7CE, #AFD3E2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">OUR GALLARY</h1>
+      <div class="slider">
+        <div class="slide-track">
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+          <div class="slide">
+            <img src="./../images/ip-img1.jpg" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+    <section class="footer text-white">
+        <div class="bg-[#146C94] w-full p-6 items-center justify-items-center">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 items-center justify-items-center text-center mt-12">
+      
+            <div class="items-center justify-items-center text-center">
+              <a href="#"><img src="./../images/nadb_logo.png" class="h-40 w-40 cursor-pointer" alt=""></a>
+            </div>
+      
+            <div>
+              <ul class="items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100">ABOUT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100">SERVICES</a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="text-xl">
+              <h1 class="text-xl m-4">CONTACT</h1>
+              <p class="m-2 text-white hover:text-black">Phone : <a href="tel: +91-9108534937">+91-9108534937</a></p>
+              <p class="m-2 text-white hover:text-black">E-Mail : <a href="mailto:info@nadb.org.in">info@nadb.org.in</a></p>
+            </div>
+      
+            <div class="col-span-2">
+              <h1 class="text-xl m-4">SOCIAL MEDIA</h1>
+      
+              <ul class="flex items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/twitter-svgrepo-com 1.png" alt=""></a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/facebook-svgrepo-com 1 (1).png" alt=""></a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/insta.png" alt=""></a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/linkedIN.png" alt=""></a>
+                </li>
+              </ul>
+      
+            </div>
+          </div>
+          <p class="mt-8">&copy; Copyright NADB. All Rights Reserved</p>
+        </div>
+      </section>
+
+
+
+
+    <script>
+        AOS.init();
+        function Menu(e){
+          let list = document.querySelector('ul');
+      
+          e.name === 'menu-outline' ? (e.name = "close-outline", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+      
+      </script>
+
+
+</body>
+</html>

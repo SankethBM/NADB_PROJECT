@@ -16,13 +16,14 @@
 }
 
 .dynamic-txt li{
-    color: #FF4242;
+    /* color: #0118D8; */
     list-style: none;
     font-size: 60px;
     /* font-weight: 500; */
     position: relative;
     top: 0;
     animation: slide 12s steps(4) infinite;
+    
 }
 
 @keyframes slide {
@@ -32,6 +33,9 @@
 }
 
 .dynamic-txt li span{
+    background: linear-gradient(90deg, #19A7CE, #19A7CE);
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     position: relative;
     margin: 5px 0;
     line-height: 90px;
@@ -41,10 +45,11 @@
     content:"";
     position: absolute;
     left: 0;
+    overflow: hidden;
     height: 100%;
     width: 100%;
     background: #fff;
-    border-left: 2px solid #FF4242;
+    border-left: 2px solid #19A7CE;
     animation: typing 3s steps(10) infinite;
 }
 
@@ -58,4 +63,168 @@
       }
 }
 
+
+.bg-img{
+    animation : bounce 8s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-50px);
+    }
+}
+
+
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 25%;
+    position: relative;
+}
+
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 220px;
+    height: 260px;
+}
+
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: #AFD3E2;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+
+.path{
+    stroke-width: 10;
+    stroke: #146C94;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1{ animation: animate-path1 1s 1s linear forwards; }
+.path-2{ animation: animate-path2 1s 1s linear forwards; }
+.path-3{ animation: animate-path3 1s 1s linear forwards; }
+.path-4{ animation: animate-path4 1s 1s linear forwards; }
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 0;
+    }
+} 
+    
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 25;
+    }
+}
+
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 35;
+    }
+}
+
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 15;
+    }
+}
+
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: showText 0.5 1s linear forwards;
+}
+
+
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 100s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*18));
+    }
+}
+
+.slide{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 16px; 
+    perspective: 100px;   
+}
+
+.slide img{
+    width: 100%;
+    transition: transform 0.5s;
+    border-radius: 20px;
+}
+
+.slide img:hover{
+    transform: translateZ(20px);
+}
+
+.slider::before, .slider::after{
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255, 255, 255,0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+
+.slider::before{
+    left: 0;
+    top: 0;
+}
+
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
 
