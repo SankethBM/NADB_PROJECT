@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <title>NADB</title>
+</head>
+<body style="font-family: Arvo, serif;font-weight: 500; font-style: normal;">
+    <section class="header">
+        <nav style="background-color: #146C94;" class="sticky fixed-top d-flex top-0 z-50 p-5 shadow md:flex md:items-center md:justify-between">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl cursor-pointer text-white mx-4">
+              <img src="./../images/nadb_logo.png" alt="" class="h-12 inline">
+              NADB
+            </span>
+            
+            <span class="text-3xl cursor-pointer text-white md:hidden block mx-2"> 
+              <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+            </span>
+          </div>
+      
+          <ul class="md:flex items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-[#146C94]">
+            <li class="mx-4 my-6 md:my-0">
+              <a href="./../index.html" class="text-xl text-white hover:text-black duration-500">HOME</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="./about.html" class="text-xl text-white hover:text-black duration-500">ABOUT</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="./services.html" class="text-xl text-white hover:text-black duration-500">SERVICES</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+              <a href="#" class="text-xl text-white hover:text-black duration-500">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+    </section>
+
+
+    <section class="services">
+        <div class="items-center justify-items-center mt-12 mb-12">
+            <h1 class="text-4xl font-extrabold mb-12 aos-init aos-animate" style="background: linear-gradient(90deg, #19A7CE, #AFD3E2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">OUR SERVICES
+            </h1>
+        </div>
+
+        <div class="items-center justify-items-center text-center font-extrabold"> 
+            <h1 class="m-8 text-2xl">Protecting Innovation. Preserving Authenticity. Enforcing Your Rights.</h1>
+            <p class="px-10 text-lg max-w-4xl">At <span class="text-[#146C94] text-xl">National Anti-Duplication Bureau </span>, we provide a comprehensive suite of services designed to detect, prevent, and respond to the growing threat of counterfeiting and intellectual property (IP) violations. With a strategic blend of technology, legal expertise, and market intelligence, we help organizations across industries safeguard their brand and proprietary assets.</p>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="items-center justify-items-center mt-12 font-bold text-center">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full items-center justify-items-center mb-8">
+                <div class="bg-transparent m-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div class="gap-8 items-center py-8 px-2 max-w-screen-xl xl:gap-16 sm:py-16 lg:px-6">
+                        <div class="mt-4 md:mt-0">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black" style="background: linear-gradient(90deg, #19A7CE, #146C94);-webkit-background-clip: text; -webkit-text-fill-color: transparent;">Market Research & Intelligence</h2>
+                            <p class="mb-6">We deliver deep market insights to help you identify and understand the scale and nature of duplication risks across your industry. Our research covers:</p>
+                            <ul class="mb-8 items-center justify-items-center">
+                                <li><p>Competitor and counterfeit product tracking</p></li>
+                                <li><p>Distribution channel analysis</p></li>
+                                <li><p>Consumer behavior and risk zones</p></li>
+                                <li><p>Real-time monitoring of online and offline markets</p></li>
+                            </ul>
+                            <p class="">By proactively identifying threats and market gaps, we enable you to stay ahead of infringers and adapt your protection strategies effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-2xl">
+                    <img class="w-full p-12 " data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400" src="./../images/market-research.png" alt="dashboard image">
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full items-center justify-items-center mb-8">
+                <div class="max-w-xl">
+                    <img class=" p-12 " data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400" src="./../images/investigate.png" alt="dashboard image">
+                </div>
+                <div class="bg-transparent m-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div class="items-center py-8 px-2 max-w-screen-xl xl:gap-16 sm:py-16 lg:px-6">
+                        <div class="mt-4 md:mt-0">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black" style="background: linear-gradient(90deg, #19A7CE, #146C94);-webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Investigative Services</h2>
+                            <p class="mb-6">Our expert investigation team conducts thorough inquiries into suspected IP violations, counterfeit operations, and fraudulent activity. We use both digital and field intelligence methods to:</p>
+                            <ul class="mb-8 items-center justify-items-center">
+                                <li><p>Trace the origin of counterfeit goods</p></li>
+                                <li><p>Uncover supply chain leaks or internal breaches</p></li>
+                                <li><p>Gather legal-grade evidence</p></li>
+                                <li><p>Coordinate with law enforcement and regulatory bodies</p></li>
+                            </ul>
+                            <p class="">All investigations are carried out discreetly, ethically, and with full documentation for potential legal proceedings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full items-center justify-items-center mb-8">
+                <div class="bg-transparent m-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div class="items-center py-8 px-2 max-w-screen-xl xl:gap-16 sm:py-16 lg:px-6">
+                        <div class="mt-4 md:mt-0">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black" style="background: linear-gradient(90deg, #19A7CE, #146C94);-webkit-background-clip: text; -webkit-text-fill-color: transparent;">Marketing Protection</h2>
+                            <p class="mb-6">Your marketing materials — from digital ads to product packaging — are valuable brand assets. We help you secure these assets against misuse and unauthorized replication by:</p>
+                            <ul class="mb-8 items-center justify-items-center">
+                                <li><p>Embedding anti-duplication technologies and identifiers</p></li>
+                                <li><p>Monitoring brand presence across digital platforms</p></li>
+                                <li><p>Ensuring supply chain transparency</p></li>
+                                <li><p>Securing product authenticity in advertising</p></li>
+                            </ul>
+                            <p class="">This ensures your brand messaging remains credible and untainted, preserving customer trust and brand equity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-xl">
+                    <img class=" p-12 " data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400" src="./../images/marketing.png" alt="dashboard image">
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full items-center justify-items-center mb-8">
+                <div class="max-w-xl">
+                    <img class=" p-12 " data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400" src="./../images/legal-assist1.png" alt="dashboard image">
+                </div>
+                <div class="bg-transparent m-12" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="400">
+                    <div class="items-center py-8 px-2 max-w-screen-xl xl:gap-16 sm:py-16 lg:px-6">
+                        <div class="mt-4 md:mt-0">
+                            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-black" style="background: linear-gradient(90deg, #19A7CE, #146C94);-webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Legal Assistance & Enforcement </h2> 
+                            <p class="mb-6">property rights are only as strong as their enforcement. We offer full-spectrum legal support to help you assert and defend your rights, including:</p>
+                            <ul class="mb-8 items-center justify-items-center">
+                                <li><p>Preparation of cease-and-desist notices</p></li>
+                                <li><p>IP registration support (trademarks, patents, copyrights)</p></li>
+                                <li><p>Litigation support and legal representation coordination</p></li>
+                                <li><p>DMCA takedown requests and platform reporting</p></li>
+                            </ul>
+                            <p class="">Our legal advisors work closely with clients and authorities to ensure fast, compliant, and cost-effective enforcement of IP protections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="footer text-white">
+        <div class="bg-[#146C94] w-full p-6 items-center justify-items-center">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 items-center justify-items-center text-center mt-12">
+      
+            <div class="items-center justify-items-center text-center">
+              <a href="#"><img src="./../images/nadb_logo.png" class="h-40 w-40 cursor-pointer" alt=""></a>
+            </div>
+      
+            <div>
+              <ul class="items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100">ABOUT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100">SERVICES</a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="text-xl">
+              <h1 class="text-xl m-4">CONTACT</h1>
+              <p class="m-2 text-white hover:text-black">Phone : <a href="tel: +91-9108534937">+91-9108534937</a></p>
+              <p class="m-2 text-white hover:text-black">E-Mail : <a href="mailto:info@nadb.org.in">info@nadb.org.in</a></p>
+            </div>
+      
+            <div class="col-span-2">
+              <h1 class="text-xl m-4">SOCIAL MEDIA</h1>
+      
+              <ul class="flex items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/twitter-svgrepo-com 1.png" alt=""></a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/facebook-svgrepo-com 1 (1).png" alt=""></a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/insta.png" alt=""></a>
+                </li>
+                <li class="mx-4 my-6 md:my-3">
+                  <a href="#" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/linkedIN.png" alt=""></a>
+                </li>
+              </ul>
+      
+            </div>
+          </div>
+          <p class="mt-8">&copy; Copyright NADB. All Rights Reserved</p>
+        </div>
+      </section>
+
+    <script>
+
+        AOS.init();
+        function Menu(e){
+          let list = document.querySelector('ul');
+      
+          e.name === 'menu-outline' ? (e.name = "close-outline", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+      
+    </script>
+
+</body>
+</html>
