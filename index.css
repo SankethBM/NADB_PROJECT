@@ -22,7 +22,7 @@
     /* font-weight: 500; */
     position: relative;
     top: 0;
-    animation: slide 12s steps(4) infinite;
+    animation: slide 8s steps(4) infinite;
     
 }
 
@@ -33,9 +33,10 @@
 }
 
 .dynamic-txt li span{
-    background: linear-gradient(90deg, #19A7CE, #19A7CE);
+    color: white;
+    /* background: linear-gradient(90deg, #19A7CE, #19A7CE);
     -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     position: relative;
     margin: 5px 0;
     line-height: 90px;
@@ -48,9 +49,8 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
-    background: #fff;
-    border-left: 2px solid #19A7CE;
-    animation: typing 3s steps(10) infinite;
+    /* border-left: 2px solid #19A7CE; */
+    animation: typing 0.5s steps(7) infinite;
 }
 
 
@@ -65,7 +65,7 @@
 
 
 .bg-img{
-    animation : bounce 8s infinite ease-in-out;
+    /* animation : bounce 8s infinite ease-in-out; */
 }
 
 @keyframes bounce {
