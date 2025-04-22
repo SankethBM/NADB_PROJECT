@@ -1,187 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./../index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>NADB</title>
-</head>
+  </head>
 
-
-<body style="font-family: Arvo, serif;font-weight: 500; font-style: normal;">
-
+  <body style="font-family: Arvo, serif; font-weight: 500; font-style: normal">
     <section class="header">
-        <nav style="background-color: #146C94;" class="sticky fixed-top d-flex top-0 z-50 p-5 shadow md:flex md:items-center md:justify-between">
-          <div class="flex justify-between items-center">
-            <span class="text-2xl cursor-pointer text-white mx-4">
-              <img src="./../images/nadb-logo.jpeg" alt="" class="h-12 inline">
-              NADB
-            </span>
-            
-            <span class="text-3xl cursor-pointer text-white md:hidden block mx-2"> 
-              <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
-            </span>
-          </div>
-      
-          <ul class="md:flex items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-[#146C94]">
-            <li class="mx-4 my-6 md:my-0">
-              <a href="./../index.html" class="text-xl text-white hover:text-black duration-500">HOME</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-              <a href="./about.html" class="text-xl text-white hover:text-black duration-500">ABOUT</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-              <a href="./services.html" class="text-xl text-white hover:text-black duration-500">SERVICES</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-              <a href="./career.html" class="text-xl text-white hover:text-black duration-500">CAREER</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0">
-              <a href="./contact.html" class="text-xl text-white hover:text-black duration-500">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
+      <nav
+        style="background-color: #146c94"
+        class="sticky fixed-top d-flex top-0 z-50 p-5 shadow md:flex md:items-center md:justify-between"
+      >
+        <div class="flex justify-between items-center">
+          <span class="text-2xl cursor-pointer text-white mx-4">
+            <img src="./../images/nadb-logo.jpeg" alt="" class="h-12 inline" />
+            NADB
+          </span>
+
+          <span class="text-3xl cursor-pointer text-white md:hidden block mx-2">
+            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+
+        <ul
+          class="md:flex items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-[#146C94]"
+        >
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="./../index.html"
+              class="text-xl text-white hover:text-black duration-500"
+              >HOME</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="./about.html"
+              class="text-xl text-white hover:text-black duration-500"
+              >ABOUT</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="./services.html"
+              class="text-xl text-white hover:text-black duration-500"
+              >SERVICES</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="./career.html"
+              class="text-xl text-white hover:text-black duration-500"
+              >CAREER</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="./contact.html"
+              class="text-xl text-white hover:text-black duration-500"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
     </section>
 
-
-    <section class="contact-form items-center justify-items-center" >
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center p-8 w-full text-center max-w-8xl">
-
-        <div class="grid items-center justify-items-center ">
-          <div class=" items-center justify-items-center text-center bg-[#E9DFC3] mb-8 p-12 rounded-2xl m-4">
-            <img src="./../images/location.png" class="h-12 w-12 m-4"  alt="">
+    <section class="contact-form items-center justify-items-center">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center p-8 w-full text-center max-w-8xl"
+      >
+        <div class="grid items-center justify-items-center">
+          <div
+            class="items-center justify-items-center text-center bg-[#E9DFC3] mb-8 p-12 rounded-2xl m-4"
+          >
+            <img src="./../images/location.png" class="h-12 w-12 m-4" alt="" />
             <h1 class="text-xl font-extrabold">Our Address</h1>
-            <a href=""><p class="text-xl font-extrabold">#518/A, 15th main road, 4th cross, Sarasawathi puram. Mysore 570009</p></a>
+            <a href=""
+              ><p class="text-xl font-extrabold">
+                #518/A, 15th main road, 4th cross, Sarasawathi puram. Mysore
+                570009
+              </p></a
+            >
           </div>
 
-          <div class=" items-center justify-items-center text-center bg-[#E9DFC3] mb-8 p-12 rounded-2xl m-4">
-            <img src="./../images/location.png" class="h-12 w-12 m-4"  alt="">
+          <div
+            class="items-center justify-items-center text-center bg-[#E9DFC3] mb-8 p-12 rounded-2xl m-4"
+          >
+            <img src="./../images/location.png" class="h-12 w-12 m-4" alt="" />
             <h1 class="text-xl font-extrabold">Head Office</h1>
-            <a href=""><p class="text-xl font-extrabold">#246, Rumal Wali Gali, Near old chopal , Ram Pura , Trinagar, North West Delhi .Delhi - 110035.</p></a>
+            <a href=""
+              ><p class="text-xl font-extrabold">
+                #246, Rumal Wali Gali, Near old chopal , Ram Pura , Trinagar,
+                North West Delhi .Delhi - 110035.
+              </p></a
+            >
           </div>
 
-          <div class=" items-center justify-items-center text-center bg-[#E9DFC3] mb-8 p-12 rounded-2xl m-4">
-            <img src="./../images/location.png" class="h-12 w-12 m-4"  alt="">
+          <div
+            class="items-center justify-items-center text-center bg-[#E9DFC3] mb-8 p-12 rounded-2xl m-4"
+          >
+            <img src="./../images/location.png" class="h-12 w-12 m-4" alt="" />
             <h1 class="text-xl font-extrabold">Zonal Office</h1>
-            <a href=""><p class="text-xl font-extrabold">#231,3rd Cross, MPM layout,Mallathahalli, Bangalore - 560056.</p></a>
+            <a href=""
+              ><p class="text-xl font-extrabold">
+                #231,3rd Cross, MPM layout,Mallathahalli, Bangalore - 560056.
+              </p></a
+            >
           </div>
         </div>
 
-        <div class=" bg-[] w-full rounded-2xl m-12" >
+        <div class="bg-[] w-full rounded-2xl m-12">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            <div class="bg-[#E9DFC3] rounded-2xl items-center justify-items-center p-12 m-4">
-              <img src="./../images/mail.png" class="h-12 w-12" alt="">
+            <div
+              class="bg-[#E9DFC3] rounded-2xl items-center justify-items-center p-12 m-4"
+            >
+              <img src="./../images/mail.png" class="h-12 w-12" alt="" />
               <h1 class="text-xl font-extrabold">Mail Us</h1>
-              <a href="mailto:info@nadb.org.in"><p class="text-xl font-extrabold">info@nadb.org.in</p></a>
+              <a href="mailto:info@nadb.org.in"
+                ><p class="text-xl font-extrabold">info@nadb.org.in</p></a
+              >
             </div>
 
-            <div class="bg-[#E9DFC3] rounded-2xl items-center justify-items-center p-12 m-4">
-              <img src="./../images/phone.png" class="h-12 w-12" alt=""> 
+            <div
+              class="bg-[#E9DFC3] rounded-2xl items-center justify-items-center p-12 m-4"
+            >
+              <img src="./../images/phone.png" class="h-12 w-12" alt="" />
               <h1 class="text-xl font-extrabold">Call Us</h1>
-              <a href="tel: +91 9606829200"><p class="text-xl font-extrabold">+91 9606829200</p></a>
-              <a href="tel: +91 9108534937"><p class="text-xl font-extrabold">+91 9108534937</p></a>
-            </div>                
+              <a href="tel: +91 9606829200"
+                ><p class="text-xl font-extrabold">+91 9606829200</p></a
+              >
+              <a href="tel: +91 9108534937"
+                ><p class="text-xl font-extrabold">+91 9108534937</p></a
+              >
+            </div>
           </div>
 
-          <div class="bg-[#E9DFC3] rounded-2xl mt-12">
-            <div class=" px-6 pt-12 pb-4">
-              <input type="text" placeholder="Enter Your Name" required class="border border-gray-300 rounded-lg h-12 w-full p-6">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="1e4c79e4-f461-4121-9bb6-64816293a8cf">
+            <div class="bg-[#E9DFC3] rounded-2xl mt-12">
+              <div class="px-6 pt-12 pb-4">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter Your Name"
+                  required
+                  class="border border-gray-300 rounded-lg h-12 w-full p-6"
+                />
+              </div>
+              <div class="px-6 py-4">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter Your E-Mail"
+                  required
+                  class="border border-gray-300 rounded-lg h-12 w-full p-6"
+                />
+              </div>
+              <div class="px-6 py-4">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Enter Your Subject"
+                  required
+                  class="border border-gray-300 rounded-lg h-12 w-full p-6"
+                />
+              </div>
+              <div class="px-6 py-4">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="Type your message here..."
+                  class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#AFD3E2]-500 focus:border-transparent resize-none"
+                ></textarea>
+              </div>
+              <div class="submit-btn pb-12">
+                <button
+                  type="submit"
+                  class="text-white bg-[#19A7CE] hover:bg-[#146C94] font-bold rounded-lg text-md px-5 py-2.5 me-2 mb-2">
+                  Send Message
+                </button>
+              </div>
             </div>
-            <div class=" px-6 py-4">
-              <input type="email" placeholder="Enter Your E-Mail" required class="border border-gray-300 rounded-lg h-12 w-full p-6">
-            </div>
-            <div class=" px-6 py-4">
-              <input type="text" placeholder="Enter Your Subject" required class="border border-gray-300 rounded-lg h-12 w-full p-6">
-            </div>
-            <div class=" px-6 py-4 pb-12">
-              <textarea id="message" name="message" rows="7" placeholder="Type your message here..." class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#AFD3E2]-500 focus:border-transparent resize-none"></textarea>
-            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="footer text-white">
+      <div class="bg-[#146C94] w-full p-6 items-center justify-items-center">
+        <div
+          class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 items-center justify-items-center text-center mt-12"
+        >
+          <div class="items-center justify-items-center text-center">
+            <a href="#"
+              ><img
+                src="./../images/nadb-logo.jpeg"
+                class="h-40 w-40 cursor-pointer"
+                alt=""
+            /></a>
+          </div>
+
+          <div>
+            <ul
+              class="items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all"
+            >
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="./../index.html"
+                  class="text-md text-white hover:text-black duration-100"
+                  >HOME</a
+                >
+              </li>
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="./about.html"
+                  class="text-md text-white hover:text-black duration-100"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="./career.html"
+                  class="text-md text-white hover:text-black duration-100"
+                  >CAREER</a
+                >
+              </li>
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="./services.html"
+                  class="text-md text-white hover:text-black duration-100"
+                  >SERVICES</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="text-xl">
+            <h1 class="text-xl m-4">CONTACT</h1>
+            <p class="m-2 text-white hover:text-black">
+              Phone : <a href="tel: +91-9108534937">+91-9108534937</a>
+            </p>
+            <p class="m-2 text-white hover:text-black">
+              E-Mail : <a href="mailto:info@nadb.org.in">info@nadb.org.in</a>
+            </p>
+          </div>
+
+          <div class="col-span-2">
+            <h1 class="text-xl m-4">SOCIAL MEDIA</h1>
+
+            <ul
+              class="flex items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all"
+            >
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="twitter.com"
+                  class="text-md text-white hover:text-black duration-100"
+                  ><img
+                    class="h-12 w-12"
+                    src="./../images/twitter-svgrepo-com 1.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="facebook.com"
+                  class="text-md text-white hover:text-black duration-100"
+                  ><img
+                    class="h-12 w-12"
+                    src="./../images/facebook-svgrepo-com 1 (1).png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="instagram.com"
+                  class="text-md text-white hover:text-black duration-100"
+                  ><img class="h-12 w-12" src="./../images/insta.png" alt=""
+                /></a>
+              </li>
+              <li class="mx-4 my-6 md:my-3">
+                <a
+                  href="linkedin.com"
+                  class="text-md text-white hover:text-black duration-100"
+                  ><img class="h-12 w-12" src="./../images/linkedIN.png" alt=""
+                /></a>
+              </li>
+            </ul>
           </div>
         </div>
-
+        <p class="mt-8">&copy; Copyright NADB. All Rights Reserved</p>
       </div>
     </section>
 
 
-
-
-
-    <section class="footer text-white">
-        <div class="bg-[#146C94] w-full p-6 items-center justify-items-center">
-          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 items-center justify-items-center text-center mt-12">
-      
-            <div class="items-center justify-items-center text-center">
-              <a href="#"><img src="./../images/nadb-logo.jpeg" class="h-40 w-40 cursor-pointer" alt=""></a>
-            </div>
-      
-            <div>
-              <ul class="items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="./../index.html" class="text-md text-white hover:text-black duration-100">HOME</a>
-                </li>
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="./about.html" class="text-md text-white hover:text-black duration-100">ABOUT</a>
-                </li>
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="./career.html" class="text-md text-white hover:text-black duration-100">CAREER</a>
-                </li>
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="./services.html" class="text-md text-white hover:text-black duration-100">SERVICES</a>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="text-xl">
-              <h1 class="text-xl m-4">CONTACT</h1>
-              <p class="m-2 text-white hover:text-black">Phone : <a href="tel: +91-9108534937">+91-9108534937</a></p>
-              <p class="m-2 text-white hover:text-black">E-Mail : <a href="mailto:info@nadb.org.in">info@nadb.org.in</a></p>
-            </div>
-      
-            <div class="col-span-2">
-              <h1 class="text-xl m-4">SOCIAL MEDIA</h1>
-      
-              <ul class="flex items-center z-[-1] md:z-auto md:static absolute  w-full left-0 md:w-auto md:py-0 py-8 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all">
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="twitter.com" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/twitter-svgrepo-com 1.png" alt=""></a>
-                </li>
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="facebook.com" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/facebook-svgrepo-com 1 (1).png" alt=""></a>
-                </li>
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="instagram.com" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/insta.png" alt=""></a>
-                </li>
-                <li class="mx-4 my-6 md:my-3">
-                  <a href="linkedin.com" class="text-md text-white hover:text-black duration-100"><img class="h-12 w-12" src="./../images/linkedIN.png" alt=""></a>
-                </li>
-              </ul>
-      
-            </div>
-          </div>
-          <p class="mt-8">&copy; Copyright NADB. All Rights Reserved</p>
-        </div>
-      </section>
-
-
-
-
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script>
-        AOS.init();
-        function Menu(e){
-          let list = document.querySelector('ul');
-      
-          e.name === 'menu-outline' ? (e.name = "close-outline", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
-        }
-    </script>
+      AOS.init();
+      function Menu(e) {
+        let list = document.querySelector("ul");
 
-</body>
+        e.name === "menu-outline"
+          ? ((e.name = "close-outline"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu-outline"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+
+      // function sendMail() {
+      //   const name = document.getElementById("name").value;
+      //   const email = document.getElementById("email").value;
+      //   const subject = document.getElementById("subject").value;
+      //   const message = document.getElementById("message").value;
+
+      //   if (!name || !email || !subject || !message) {
+      //     alert("Please fill out all fields.");
+      //     return;
+      //   }
+
+      //   const emailBody = `
+      //     <h3>New Contact Form Submission</h3>
+      //     <p><strong>Name:</strong> ${name}</p>
+      //     <p><strong>Email:</strong> ${email}</p>
+      //     <p><strong>Subject:</strong> ${subject}</p>
+      //     <p><strong>Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>`;
+
+      //   Email.send({
+      //     Host: "smtp.gmail.com",
+      //     Username: email,
+      //     Password: "Sa63@64bM",
+      //     To: "sankethbm333@gmail.com",
+      //     From: email,
+      //     Subject: `Contact Form: ${subject}`,
+      //     Body: emailBody,
+      //   })
+      //     .then(message => alert(message)
+      //     );
+      // }
+    </script>
+  </body>
 </html>
