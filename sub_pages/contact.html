@@ -31,6 +31,20 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>NADB</title>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "ZURBDmiUz2Ktps2ok",
+        });
+      })();
+    </script>
+
+
   </head>
 
   <body style="font-family: Arvo, serif; font-weight: 500; font-style: normal">
@@ -162,8 +176,12 @@
             </div>
           </div>
 
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="1e4c79e4-f461-4121-9bb6-64816293a8cf">
+          <form action="" method="">
+            <input
+              type="hidden"
+              name="access_key"
+              value="1e4c79e4-f461-4121-9bb6-64816293a8cf"
+            />
             <div class="bg-[#E9DFC3] rounded-2xl mt-12">
               <div class="px-6 pt-12 pb-4">
                 <input
@@ -206,14 +224,14 @@
               </div>
               <div class="submit-btn pb-12">
                 <button
-                  type="submit"
-                  class="text-white bg-[#19A7CE] hover:bg-[#146C94] font-bold rounded-lg text-md px-5 py-2.5 me-2 mb-2">
+                  onclick="sendMail()"
+                  class="text-white bg-[#19A7CE] hover:bg-[#146C94] font-bold rounded-lg text-md px-5 py-2.5 me-2 mb-2"
+                >
                   Send Message
                 </button>
               </div>
             </div>
           </form>
-
         </div>
       </div>
     </section>
@@ -324,8 +342,6 @@
       </div>
     </section>
 
-
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script>
       AOS.init();
       function Menu(e) {
@@ -340,36 +356,28 @@
             list.classList.remove("opacity-100"));
       }
 
-      // function sendMail() {
-      //   const name = document.getElementById("name").value;
-      //   const email = document.getElementById("email").value;
-      //   const subject = document.getElementById("subject").value;
-      //   const message = document.getElementById("message").value;
+      function sendMail() {
+        var params = {
+          name : document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          subject : document.getElementById("subject").value,
+          message: document.getElementById("message").value,
+        };
+        const serviceID = "service_cpgaa8e";
+        const templateID = "template_zt0vlte";
+  
+        emailjs.send(serviceID, templateID, params).then((res) => {
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("subject").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("sent !!");
+        }).catch((err) => console.log(err));
+      }
 
-      //   if (!name || !email || !subject || !message) {
-      //     alert("Please fill out all fields.");
-      //     return;
-      //   }
 
-      //   const emailBody = `
-      //     <h3>New Contact Form Submission</h3>
-      //     <p><strong>Name:</strong> ${name}</p>
-      //     <p><strong>Email:</strong> ${email}</p>
-      //     <p><strong>Subject:</strong> ${subject}</p>
-      //     <p><strong>Message:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>`;
 
-      //   Email.send({
-      //     Host: "smtp.gmail.com",
-      //     Username: email,
-      //     Password: "Sa63@64bM",
-      //     To: "sankethbm333@gmail.com",
-      //     From: email,
-      //     Subject: `Contact Form: ${subject}`,
-      //     Body: emailBody,
-      //   })
-      //     .then(message => alert(message)
-      //     );
-      // }
     </script>
   </body>
 </html>
