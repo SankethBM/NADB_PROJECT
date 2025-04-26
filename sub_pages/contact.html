@@ -39,7 +39,7 @@
     <script type="text/javascript">
       (function () {
         emailjs.init({
-          publicKey: "ZURBDmiUz2Ktps2ok",
+          publicKey: "zvrO8zJw3nOp70wu_",
         });
       })();
     </script>
@@ -176,7 +176,7 @@
             </div>
           </div>
 
-          <form action="" method="">
+          <form id="contactForm">
             <input
               type="hidden"
               name="access_key"
@@ -356,27 +356,23 @@
             list.classList.remove("opacity-100"));
       }
 
-      function sendMail() {
-        var params = {
-          name : document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          subject : document.getElementById("subject").value,
-          message: document.getElementById("message").value,
-        };
-        const serviceID = "service_cpgaa8e";
-        const templateID = "template_zt0vlte";
-  
-        emailjs.send(serviceID, templateID, params).then((res) => {
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("subject").value = "";
-          document.getElementById("message").value = "";
-          console.log(res);
-          alert("sent !!");
-        }).catch((err) => console.log(err));
-      }
+    
+      const form = document.getElementById("contactForm");
 
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
+        emailjs.sendForm("service_nm572vm", "template_x95qa2u", this).then(
+          () => {
+            alert("Application sent successfully!");
+            form.reset();
+          },
+          (error) => {
+            console.error("Failed to send application:", error);
+            alert("Failed to send application. Please try again.");
+          }
+        );
+      });
 
     </script>
   </body>
